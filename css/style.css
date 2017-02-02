@@ -7,7 +7,7 @@
  /*# sourceMappingURL=bootstrap.min.css.map */
 
 
-
+/* Custom CSS for techtalenttracker.com */
 
  @font-face {
   font-family: 'Glyphicons Halflings';
@@ -23,81 +23,32 @@ body {
   font-size: .8125rem; 
 }
 
-.form-inline .form-control {width: 100%}
 .container-fluid {max-width: 1280px;}
+
 a {color: #0035af;}
 a:hover {color: #0085ff;}
 
-h1 {
-  font-size: 1.875rem;
-  margin-top: 20px;
-  margin-bottom: 4px;
-  font-weight: 700;
-/*  font-family: 'Concert One', -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, Oxygen, Avenir, 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-text-transform: uppercase;*/
+h1 {font-size: 1.875rem; margin-top: 20px; margin-bottom: 4px; font-weight: 700;}
+h2 {font-size: 0.9375rem; font-weight: 400; color: #777; margin-top: 0; margin-bottom: 15px;}
+
+@media screen and (max-width: 767px) {
+  div.dataTables_wrapper div.dataTables_length, div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {text-align: left;}  
+  .submit-buttons {text-align: left;margin-top: 0;}
 }
 
-h2 {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  color: #777;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
+.submit-buttons {margin-top: 20px; margin-bottom: 15px;}
 
-
-.submit-buttons {
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-.form-control {
-  font-weight: normal;
-  font-size: .8125rem;
-}
-
+.form-control {font-weight: normal; font-size: .8125rem;}
 .form-inline .form-control {width: 100%;}
 
-.btn-primary, .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-  background-color: #235bae;
-  border-color: #235bae;
-}
-
+.btn-primary, .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {background-color: #235bae; border-color: #235bae;}
+.btn-default {color: #fff; background-color: #1d2b72; border-color: #1d1d6d;}
+.btn-default:hover {color: #fff;background-color: #334499;border-color: #334499;}
 .pagination>li>a, .pagination>li>span {color: #054bb3;}
 
-.btn-default {
-  color: #fff;
-  background-color: #1d2b72;
-  border-color: #1d1d6d;
-}
-
-.btn-default:hover {
-  color: #fff;
-  background-color: #334499;
-  border-color: #334499;
-}
-
-.modal-header {border-bottom: none;}
-.modal-body {padding: 0px 15px;}
-.modal-footer {border-top: none;}
-
-.close {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.table>thead>tr>th {
- font-size: 1rem;
- border-bottom: 1px solid #ddd;
-}
-
-table, table.dataTable.fixedHeader-floating, table.dataTable.fixedHeader-locked {/*background-color: #f9f8f4;*/}
+/*table, table.dataTable.fixedHeader-floating, table.dataTable.fixedHeader-locked {background-color: #f9f8f4;}*/
 table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {opacity: 1;}
-
-.table-striped>tbody>tr:nth-of-type(odd) {background-color: #f3f5ff; }
-
 table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child {padding-left: 3.5rem;}
-
 table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
   left: 1rem !important;
   top: 1rem;
@@ -108,30 +59,16 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataT
   line-height: 18px;
   background-color: #054bb3;
 }
-.table>tbody>tr>td, .table>tbody>tr>th {
-  padding:  0 .5rem;
-  vertical-align: middle;
-  border-top: 1px solid #fff;
-}
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: rgba(225,225,255,0.8);}
+
+.table-striped>tbody>tr:nth-of-type(odd) {background-color: #f3f5ff;}
+
+.table>thead>tr>th {font-size: 1rem;border-bottom: 1px solid #ddd;}
+.table>tbody>tr>td, .table>tbody>tr>th {padding: 0 .5rem; vertical-align: middle; border-top: 1px solid #fff;}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #d9d9ff;}
 .table>tfoot>tr>td, .table>tfoot>tr>th {color: #aaa;}
 
-img { height: 64px; width: 64px;}
+img { height: 66px; width: 66px;}
 .date {font-size: .75rem;}
-.name {
-  font-size: .85rem;
-  font-weight: 600;
-}
-.at { font-weight: 500; }
-.notes {padding-right:20px; font-size: .75rem; }
-
-
-@media screen and (max-width: 767px) {
-  div.dataTables_wrapper div.dataTables_length, div.dataTables_wrapper div.dataTables_filter, div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate {
-    text-align: left;
-  }  
-  .submit-buttons {
-    text-align: left;
-    margin-top: 0;
-  }
-}
+.name {font-size: .85rem;font-weight: 600;}
+.at {font-weight: 500;}
+.notes {padding-right:20px; font-size: .75rem;}
