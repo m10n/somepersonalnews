@@ -487,21 +487,11 @@
 
 
     <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready( function () { 
       $('td>a').click(function(){
         window.open(this.href);
         return false;
       });
-    });
-    </script>
-    <script type="text/javascript">
-    $(document).ready( function () { 
-      $('#tracker tbody')
-      .on( 'click', 'td', function () {
-        var colIdx = table.cell(this).index().column;
-        $( table.cells().nodes() ).removeClass( 'highlight' );
-        $( table.column( colIdx ).nodes() ).addClass( 'highlight' );
-      } );
       $('#tracker thead tr:eq(1) th').each( function () {
         var title = $('#tracker thead tr:eq(0) th').eq( $(this).index() ).text();
         $(this).html( '<input type="text" class="form-control hidden-xs" placeholder="Search" />' );
@@ -523,12 +513,7 @@
       responsive: true,
       "order": [[ 0, "desc" ]]
     });
-
 </script>
-
-
-
-
 
 </body>
 </html>
