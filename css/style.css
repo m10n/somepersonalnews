@@ -43,6 +43,7 @@ h2 {font-size: 0.9375rem; font-weight: 400; color: #777; margin-top: 0; margin-b
 a {color: #0035af;}
 a:hover {color: #0085ff;}
 
+.btn {margin-bottom:.25rem;}
 .btn-primary, .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {background-color: #235bae; border-color: #235bae;}
 .btn-default {color: #fff; background-color: #1d2b72; border-color: #1d1d6d;}
 .btn-default:hover {color: #fff;background-color: #334499;border-color: #334499;}
@@ -82,7 +83,6 @@ thead .glyphicon {font-size: 1rem;}
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #e8e8fb;}
 .table>tbody>tr> {border-radius: 6px !important; padding-right: 20px !important;}
 .table>tbody>tr>td, .table>tbody>tr>th {padding: 0 .3125rem; vertical-align: bottom; border-top: 1px solid #fff; line-height:1.45;}
-td.highlight {background-color: #f5f6fd !important;}
 
 table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child {padding-left: 3.5rem;}
 table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
